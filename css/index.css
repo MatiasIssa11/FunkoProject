@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-family:'Inter',sans-serif;
+  font-size: 62.5%;
+  color: #111111;
+}
+
+#logo{
+  justify-content: center;
+}
+
+#navegador{
+  align-items: left;
+  justify-content: space-around;
+}
+
+header,footer{
+    font-family:'Raleway',sans-serif;
+    color: blue;
+    background-color: #111111;
+}
+
+ul,ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.8em;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
