@@ -1,9 +1,93 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: content-box;
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
 }
 
-a{
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
 }
+
+picture img{
+  width: 100%;
+}
+
+header {
+  display: flex; /*a que elemento le  esta aplicando esta propiedad?*/
+  justify-content: space-between; /* Coloca elementos en los extremos */
+  align-items: center; /* Alinea verticalmente al centro */
+  padding: 10px 20px; /* Añade relleno para espaciar los elementos del borde */
+  background-color: #30343f; /* Solo para mostrar el fondo */
+}
+.navegadorshop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.listanavshop {
+  list-style: none;
+  align-items: center;
+  display: flex; /* Para que los elementos de la lista se alineen horizontalmente */
+  gap: 20px; /* Espacio entre elementos de la lista */
+}
+.listanavshop li {
+  margin: 0;
+  padding: 0;
+}
+.listanavshop a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 2em;
+  color: white;
+}
+p {
+  font-size: 1.8em;
+}
+
+.articles{
+    display: flex;
+}
+
+.mainshop,.articulos{
+  display: flex;
+}
+
+footer {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    align-items: center;
+    background-color: #30343f;
+  }
+  
+.footer p {
+  display: flex;
+  justify-content: center;
+} 
+  .footer nav {
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+    gap: 20px;
+  }
+  .navfooter li{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    align-items: end;
+  }
+  .navfooter a {
+    text-decoration: none;
+    color: white;
+  }
