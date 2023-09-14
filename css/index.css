@@ -53,7 +53,7 @@ header {
 }
 
 .navbar__menu {
-  display: flex; 
+  display: flex;
   font-size: medium;
   align-items: center;
   list-style: none;
@@ -64,9 +64,9 @@ header {
   font-size: 8px 16px;
   display: inline-block;
   transition: background.3s ease-in-out;
-  position:relative;
+  position: relative;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .navbar__link:hover {
   display: inline-block;
@@ -82,39 +82,39 @@ header {
   gap: 8px;
 }
 
-.with-submenu:hover .submenu{
+.with-submenu:hover .submenu {
   display: block;
 }
 
-.submenu{
+.submenu {
   display: none;
-  position:absolute;
+  position: absolute;
   width: 300px;
   background-color: #30343f;
 }
 
-.submenu__item{
-  display:block;
+.submenu__item {
+  display: block;
   padding: 8px 16px;
   font-size: medium;
 }
 
-.submenu__link{
+.submenu__link {
   display: flex;
   padding: 8px 16px;
   font-size: medium;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: background.3s ease-in-out;
 }
 
-.submenu__link:hover{
-background-color: red;
+.submenu__link:hover {
+  background-color: red;
 }
 
 /* >Hero< */
 
-.hero{
-  display:flex;
+.hero {
+  display: flex;
   background-position: top;
   background-image: url(/img/funkos-banner.webp);
   padding: 128px;
@@ -124,49 +124,98 @@ background-color: red;
   position: relative;
 }
 .hero::before {
-content: '';
-background-color: rgba(0, 0,0, 0);
-width: 100%;
-height: 100%;
-top: 0;
-left: 0;
-position: absolute;
-backdrop-filter: blur(2px) brightness(.9);
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  backdrop-filter: blur(2px) brightness(0.9);
 }
 
 .hero__content {
-display: flex;
-flex-direction: column;
-width: 100%;
-max-width: 100%;
-gap: 20px;
-align-items: start;
-position:relative;/*  Recordar lo importantes que es no cagarla con las posicions */
-color: #FFFFFF;
-z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  gap: 20px;
+  align-items: start;
+  position: relative; /*  Recordar lo importantes que es no cagarla con las posicions */
+  color: #ffffff;
+  z-index: 2;
 }
 
-.hero__title{
-  font-family: 'Raleway', sans-serif;;
-  color:#FFFFFF;
+.hero__title {
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
   font-size: 38px;
 }
-.hero__text{
-  font-family:'Raleway',sans-serif;
+.hero__text {
+  font-family: "Raleway", sans-serif;
   font-size: medium;
-  color:#FFFFFF
+  color: #ffffff;
 }
-.hero__link{
+.hero__link {
   display: inline-block;
   font-size: medium;
   padding: 12px 68px;
   font-weight: 500;
   border-radius: 50px;
-  color:#111111;
-  background-color: #FFFFFF;
+  color: #111111;
+  background-color: #ffffff;
 }
 
-.hero__link:hover{
+.hero__link:hover {
   background-color: red;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/*Collections*/
+
+.collection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.collection:nth-child(2) .collection__cover{
+order:-1;
+}
+
+.collection__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: start;
+}
+
+.collection__title {
+  font-size: 46px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.collection__text {
+  color: #4f4f4f;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  border-bottom: 1px solid #f33;
+  padding-bottom: 20px;
+}
+
+.collection__link {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #30343f;
+  border-radius: 50px;
+  padding: 16px 36px;
+  font-weight: 500;
+  transition: background.3s ease-in-out;
+}
+
+.collection__link:hover {
+  background-color: red;
 }
