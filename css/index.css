@@ -91,6 +91,7 @@ header {
   position: absolute;
   width: 300px;
   background-color: #30343f;
+  z-index: 3;
 }
 
 .submenu__item {
@@ -177,10 +178,11 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  padding: 16px 0px;
 }
 
-.collection:nth-child(2) .collection__cover{
-order:-1;
+.collection:nth-child(2) .collection__cover {
+  order: -1;
 }
 
 .collection__content {
@@ -218,4 +220,126 @@ order:-1;
 
 .collection__link:hover {
   background-color: red;
+}
+
+/* slider */
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin: 68px auto;
+}
+.slider__title {
+  font-family: "Raleway";
+  font-size: 46px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.slider__list {
+  display: flex;
+  flex-shrink: 0;
+  gap: 24px;
+}
+
+.card-item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+
+.card-item__license {
+  font-size: x-small;
+  font-weight: 500;
+  color: var(--Gray-1, #333);
+}
+
+.card-item__name {
+  font-size: medium;
+  font-weight: 700;
+}
+
+.card-item__price {
+  font-size: x-small;
+  color: var(--Gray-1, #333);
+}
+
+.card-item__promo {
+  color: #1d84b5;
+  font-size: x-small;
+  font-weight: 700;
+}
+
+.card-item__cover {
+  display: flex;
+  position: relative;
+}
+.card-item__cover img {
+  animation: fade 1.7s;
+}
+
+.card-item__img--back {
+  display: none;
+}
+
+.card-item__cover:hover .card-item__img--back {
+  display: block;
+}
+.card-item__cover:hover .card-item__img--front {
+  display: none;
+}
+
+.card-item__tag{
+  display: flex;
+  align-items:flex-start;
+  font-weight: 500;
+  padding: 8px 12px; 
+  color: #FFF;
+  background-color:#f33;
+  text-transform: uppercase ;
+  position:absolute;
+  right: 0%;
+}
+
+.card-item__tag:hover{
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  background-color: #30343f;
+  padding: 23px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  color: #ffffff;
+}
+
+foot__cover img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.foot__nav {
+}
+
+.foot__link {
+  color: #ffffff;
 }
