@@ -9,22 +9,43 @@
     ></script>
     <link href="home.html" rel="html" target="_blank" />
     <link href="/css/shop.css" rel="stylesheet" />
+    <link
+      href="/bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.js"
+      rel="stylesheet"
+    />
     <title>Shop</title>
   </head>
   <body>
-    <header>
-      <nav class="navegadorshop">
-        <picture>
-          <a href="./index.html" rel="">
+    <header class="header">
+      <nav class="navbar container">
+        <picture class="navbar__logo">
+          <a href="./index.html">
             <img src="/img/branding/logo_light_horizontal.svg" alt="" />
           </a>
         </picture>
-        <ul class="listanavshop" id="listanavshop">
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="./contacto.html">Contacto </a></li>
-          <li><a href="./login.html">Login</a></li>
-          <li>
-            <a href="./carrito.html"><img src="/img/icons/cart-icon.svg" /></a>
+        <ul class="navbar__list">
+          <li class="navbar__item with-submenu">
+            <a class="navbar__link with-icon" href="/pages/shop.html"
+              >Shop<i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="submenu">
+              <li class="submenu__item"><a class="submenu__link" href="">Funkos</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="">Remeras</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="">Llaveros</a></li>
+            </ul>
+          </li>
+          <li class="navbar__item"><a class="navbar__link" href="">Contacto</a></li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="/pages/login.html">Login</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__item" href="./carrito.html"
+              ><img src="/img/icons/cart-icon.svg"
+            /></a>
           </li>
         </ul>
       </nav>
