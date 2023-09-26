@@ -8,14 +8,12 @@
       crossorigin="anonymous"
     ></script>
     <link href="home.html" rel="html" target="_blank" />
-    <link href="/css/shop.css" rel="stylesheet" />
+    <link href="/css/index.css" rel="stylesheet" />
     <link
-      href="/bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-    />
-    <link
-      href="/bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.js"
-      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
     <title>Shop</title>
   </head>
@@ -33,12 +31,20 @@
               >Shop<i class="fa-solid fa-chevron-down"></i>
             </a>
             <ul class="submenu">
-              <li class="submenu__item"><a class="submenu__link" href="">Funkos</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="">Remeras</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="">Llaveros</a></li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="">Funkos</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="">Remeras</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="">Llaveros</a>
+              </li>
             </ul>
           </li>
-          <li class="navbar__item"><a class="navbar__link" href="">Contacto</a></li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="">Contacto</a>
+          </li>
           <li class="navbar__item">
             <a class="navbar__link" href="/pages/login.html">Login</a>
           </li>
@@ -50,115 +56,133 @@
         </ul>
       </nav>
     </header>
-    <aside>
-      <form>
-        <label for="BuscarShop">Buscar</label>
-        <input type="text" id="BuscarShop" />
-        <label for="">Ordenar Por</label>
-        <input type="" id="" />
-        <h3>Precio</h3>
-        <label for="Min">Min</label>
-        <input type="checkbox" id="Min" />
-        <label for="Max" id="Max">Max</label>
-        <input type="checkbox" id="Max" />
-        <h3>Filtrar</h3>
-        <ul>
-          <li>
-            <label for="nuevos"><input type="checkbox" />Nuevos</label>
+    <main class="main container">
+      <aside class="aside">
+        <form class="form container">
+          <label for="Search">Buscar</label>
+          <input type="text" name="Search" placeholder="item o categoria" />
+          <label for="">Ordenar Por</label>
+          <input type="" id="" placeholder="Mayor a menor" />
+          <h3>Precio</h3>
+          <label for="Min">Min</label>
+          <input type="checkbox" name="Min" />
+          <label for="Max">Max</label>
+          <input type="checkbox" name="Max" />
+          <h3>Filtrar</h3>
+          <ul>
+            <li>
+              <label for="nuevos"><input type="checkbox" />Nuevos</label>
+            </li>
+            <li>
+              <label for="ofertas"
+                ><input type="checkbox" name="ofertas" />Ofertas</label
+              >
+            </li>
+            <li>
+              <label for="E.especial"
+                ><input type="checkbox" name="E.especial" />Edicion
+                Especial</label
+              >
+            </li>
+            <li>
+              <label for="favoritos"
+                ><input type="checkbox" name="favoritos" />Favoritos</label
+              >
+            </li>
+          </ul>
+        </form>
+      </aside>
+      <section class="samples container">
+        <ul class="card-item__content">
+          <li class="slider__item">
+            <a href="" class="card-item__link"></a>
+            <article>
+              <picture class="card-item__cover">
+                <img
+                  src="/img/star-wars/trooper-1.webp"
+                  alt=""
+                  class="card-item__img"
+                />
+              </picture>
+            </article>
+            <div class="card-item__content">
+              <p class="card-item__license">STAR WARS</p>
+              <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+              <p class="card-item__price">1799,99</p>
+              <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+            </div>
           </li>
-          <li>
-            <label for="ofertas"
-              ><input type="checkbox" id="ofertas" />Ofertas</label
-            >
+          <li class="card__item">
+            <a href="" class="card-item__link"></a>
+            <article>
+              <picture class="card-item__cover">
+                <img
+                  src="/img/pokemon/pidgeotto-1.webp"
+                  alt=""
+                  class="card-item__img"
+                />
+              </picture>
+              <div class="card-item__content">
+                <p class="card-item__license">Pokemon</p>
+                <h4 class="card-item__name">PIDGEOTTO</h4>
+                <p class="card-item__price">$ 1799,99</p>
+                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+              </div>
+            </article>
           </li>
-          <li>
-            <label for="E.especial"
-              ><input type="checkbox" id="E.especial" />Edicion Especial</label
-            >
-          </li>
-          <li>
-            <label for="favoritos"
-              ><input type="checkbox" id="favoritos" />Favoritos</label
-            >
+          <li class="card-item">
+            <a href="" class="card-item__link"></a>
+            <article>
+              <picture class="card-item__cover">
+                <img
+                  src="/img/harry-potter/luna-1.webp"
+                  alt=""
+                  class="card-item__img"
+                />
+              </picture>
+              <div class="card-item__content">
+                <p class="card-item__license">Harry Potter</p>
+                <h4 class="card-item__name">LUNA LOVEGOOD LEON MASK</h4>
+                <p class="card-item__price">$ 1799,99</p>
+                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+              </div>
+            </article>
           </li>
         </ul>
-      </form>
-    </aside>
-    <main class="mainshop">
-      <ul class="articulos">
-        <li>
-          <a href="">
-            <article>
-              <picture>
-                <img src="/img/star-wars/trooper-1.webp" />
-              </picture>
-            </article>
-          </a>
-          <div>
-            <p>STAR WARS</p>
-            <h4>STORMTROOPER LIGHTSABER</h4>
-            <p>1799,99</p>
-            <p>3 CUOTAS SIN INTERÉS</p>
-          </div>
-        </li>
-        <li>
-          <a href="">
-            <article>
-              <picture>
-                <img src="/img/pokemon/pidgeotto-1.webp" alt="" />
-              </picture>
-              <div>
-                <p>Pokemon</p>
-                <h4>PIDGEOTTO</h4>
-                <p>$ 1799,99</p>
-                <p>3 CUOTAS SIN INTERÉS</p>
-              </div>
-            </article>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <article>
-              <picture>
-                <img src="/img/harry-potter/luna-1.webp" alt="" />
-              </picture>
-              <div>
-                <p>Harry Potter</p>
-                <h4>LUNA LOVEGOOD LEON MASK</h4>
-                <p>$ 1799,99</p>
-                <p>3 CUOTAS SIN INTERÉS</p>
-              </div>
-            </article>
-          </a>
-        </li>
-        <!-- <li><h4>STORMTROOPER LIGHTSABER</h4></li>
-        <li><h4>PIDGEOTTO</h4></li>
-        <li><h4>LUNA LOVEGOOD LION MASK</h4></li>
-        <li><h4>STORMTROOPER LIGHTSABER</h4></li>
-        <li><h4>PIDGEOTTO</h4></li>
-        <li><h4>LUNA LOVEGOOD LION MASK</h4></li> -->
-      </ul>
-    </main>
-    <footer>
-      <section>
-        <nav class="navfooter">
-          <ul>
-            <li><a href="./shop.html">Shop</a></li>
-            <li><a href="./ingreso.html">Registrarse</a></li>
-            <li><a href="./login.html">Login</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-          </ul>
-          <picture>
-            <a href="./index.html">
-              <img
-                src="/img/branding/isotype.svg"
-                alt="Isotipo de la marca FunkoShop"
-              />
-            </a>
-          </picture>
-        </nav>
       </section>
-      <p>All righs reserved 2023-Funkoshop & Copy;</p>
+    </main>
+    <footer class="footer">
+      <nav class="navbar container">
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a class="navbar__link" href="./shop.html">Shop</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./ingreso.html">Registrarse</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./login.html">Login</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <picture class="navbar__cover">
+          <a href="./index.html">
+            <img
+              class="navbar__img"
+              src="/img/branding/isotype.svg"
+              alt="Isotipo de la marca FunkoShop"
+            />
+          </a>
+        </picture>
+      </nav>
+      <p class="footer__copy">All righs reserved 2023-Funkoshop & Copy;</p>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
